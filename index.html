@@ -15,66 +15,93 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <header class="wrapper clearfix">
-      <nav class="fixed-nav-bar">
-        <h1>Web Development Notebook</h1>
-        <div class="right">
-        <ul>
-        <li><a href="mailto:iamadev@gmail.com?Subject=Hello">iamadev@gmail.com</a></li>
-        <li><a href="http://www.codepen.io">Codepen</a></li>
-        <li><a href="http://www.github.com">GitHub</a></li>
-        <li><a href="http://www.llinkedin.com">LinkedIn</a></li>
-        </ul>
-        </div>
-      <div id='cssmenu'>
-        <ul class="nav nav-tabs">
-           <li class='active'><a data-toggle="tab" href='item1'><span>Journal</span></a></li>
-           <li><a data-toggle="tab"  href='item2'><span>HTML</span></a></li>
-           <li><a data-toggle="tab" href='item3'><span>CSS</span></a></li>
-           <li><a data-toggle="tab" href='item4'><span>JavaScript</span></a></li>
-           <li class='last'><a data-toggle="tab" href='item5'><span>Tools</span></a></li>
-        </ul>
-        </div>
-        </nav>
-      </header>
     <body>
+      <header class="wrapper clearfix">
+          <nav class="fixed-nav-bar">
+          <h1>Web Development Notebook</h1>
+          <div class="right">
+          <ul class="right">
+          <li><a href="mailto:imadev@gmail.com?Subject=Hello%20again" target="_top">iamadev@gmail.com</a>  | </li>
+          <li><a href="http://www.codepen.io">Codepen</a> | </li>
+          <li><a href="http://www.github.com">GitHub</a>  |  </li>
+          <li><a href="http://www.linkedin.com">LinkedIn</a></li>
+          </ul>
+          </div>
+          <div id='cssmenu'>
+          <ul class="nav nav-tabs">
+             <li class='active'><a data-toggle="tab" href="#journal"><span>Journal</span></a></li>
+             <li><a data-toggle="tab"  href="#html"><span>HTML</span></a></li>
+             <li><a data-toggle="tab" href="#css"><span>CSS</span></a></li>
+             <li><a data-toggle="tab" href="#js"><span>JavaScript</span></a></li>
+             <li class='last'><a data-toggle="tab" href="#tools"><span>Tools</span></a></li>
+          </ul>
+          </div>
+          </nav>
+        </header>
+        <div class="bottom-wrapper">
       <section>
         <div class="tabcontents">
                 <div id="view1">
             <div class="flexContainer">
               <div class="flex-item">
-                <h2>Journal</h2></div>
+              <h2 id="journal">Journal</h2>
+              </div>
             <article>
                 <h3>My Goals</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
+                <p>My goals from this class include:</p>
+                <ul class="article">
+                  <h5>Why am I Taking This Class?</h5>
+                    <li>To familiarize myself with the concepts and terminology of HTML, CSS, and JavaScript.</li>
+                    <li>To be able to create a comprehensive website without much difficulty (by the end of the class).</li>
+                  <h5>What do I Hope to Get Out of it?</h5>
+                    <li>To acquire knowledge that will enable me to work as a website designer and developer.</li>
+                    <li>To be able to work as a team and also to network with other coders.</li>
+                </ul>
               </article>
               <article>
-                <h3>Week 1</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
+                <h3>Concerns</h3>
+                <p>Some of the concerns I have with respect to the class:</p>
+                <ul class="article">
+                  <li>Being able to cope up with the information after being on a break for 3+ years.</li>
+                  <li>Being able to google up the correct html tag and implement it.</li>
+                  <li>Being able to create comprehensive websites and be able to apply ideas to it.</li>
+                </ul>
               </article>
               <article>
-                <h3>I Hate Git</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
+                <h3>Commonly Used GIT Commands</h3>
+                <p>Some commonly used GIT commands are as follows:</p>
+                <dl class="glossary">
+                <dt>git init</dt>
+                <dd>Initialize a repository.</dd>
+                <dt>git clone</dt>
+                <dd>Make a local copy of the remote repository.</dd>
+                <dt>git add</dt>
+                <dd>Add the modified files in the staging area.</dd>
+                <dt>git commit</dt>
+                <dd>Save the files in the remote repository/branch.</dd>
+                <dt>git push</dt>
+                <dd>Deploy the modified files on the host server.</dd>
+                <dt>git merge</dt>
+                <dd>Transfer the changes from one branch to another.</dd>
+                <dt>git branch -av</dt>
+                <dd>List the branches of that repository.</dd>
+                <dt>git pull</dt>
+                <dd>Copy the modified files from the remote repository.</dd>
+                </dl>
               </article>
               <article>
                 <h3>Glossary</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
+                <p>This card collects terms and their definitions:</p>
+                <dl class="glossary">
+                <dt>HTML</dt>
+                <dd>HTML stands for Hyper Text Markup Language.</dd>
+                <dt>Tag</dt>
+                <dd>HTML tags are the hidden keywords within a web page that define how the browser must format and display the content.</dd>
+                <dt>Element</dt>
+                <dd>An element is everything from the start tag to the end tag.</dd>
+                <dt>Attributes</dt>
+                <dd>Attributes provide additional information about elements - they come in name/value pairs like: <i>name="value"</i></dd>
+                </dl>
               </article>
               <article>
               <h3>Git Saved my Life</h3>
@@ -87,6 +114,7 @@
               <article>
                 <h3>Week 3</h3>
                 <p>
+                  <img src="img/profile.png" align="left" HSPACE=”50” VSPACE=”50”/>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -100,7 +128,9 @@
         <div class="tabcontents">
                 <div id="view2">
             <div class="flexContainer">
-              <div class="flex-item">HTML</div>
+              <div class="flex-item">
+                <h2 id="html">HTML</h2>
+              </div>
           <article>
             <h3>Tags &amp; Elements</h3>
             <p>
@@ -125,7 +155,8 @@
       <div class="tabcontents">
           <div id="view3">
       <div class="flexContainer">
-        <div class="flex-item">Cascading Style Sheets</div>
+        <div class="flex-item">
+          <h2 id="css">Cascading Style Sheets</h2></div>
             <article>
               <h3>The Cascade</h3>
               <p>
@@ -166,7 +197,9 @@
           <div class="tabcontents">
               <div id="view4">
           <div class="flexContainer">
-            <div class="flex-item">JavaScript and JQuery</div>
+            <div class="flex-item">
+              <h2 id="js">JavaScript and JQuery</h2>
+              </div>
           <article>
             <h3>Variables</h3>
             <p>
@@ -216,7 +249,9 @@
           <div class="tabcontents">
               <div id="view5">
           <div class="flexContainer">
-            <div class="flex-item">Tools</div>
+            <div class="flex-item">
+              <h2 id="tools">Tools</h2>
+            </div>
           <article>
             <h3>Command Line</h3>
             <p>
@@ -242,5 +277,6 @@
           Copyright &copy; 2015 AnjKul
         </p>
       </div>
+    </div>
     </body>
 </html>

@@ -1,65 +1,103 @@
 body {
-  padding-top: 150px;
+  padding-top: 60px;
   position: absolute;
   }
 article {
-  background: white;
+  background: #DCFFFF;
   border: 2px solid gray;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-left: 5%;
   margin-top: 2rem;
   padding: 1rem;
   width: 20rem;
-  height: 12rem;
   display: inline-block;
 }
-html {
-  background-color:white;
-}
+/*html {
+  background-color: white;
+}*/
 .fixed-nav-bar {
   position:fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  padding: 0;
+  /*z-index: 9999;*/
   width: 100%;
-  height: 10px;
-  background-color: white;
+  height: 160px;
+  background-color: #B009B0;
+}
+:target:before {
+content:"";
+display:block;
+height:200px; /* fixed header height*/
+margin:-200px 0 0; /* negative fixed header height */
 }
 .right ul {
+align-items: flex-end;
 float: right;
+display: inline-block;
 padding: 5px 10px 10px 5px;
-font-size: 11px;
-list-style: none;
-white-space: nowrap;
-display: block;
+font-size: 15px;
+overflow: hidden;
 }
 .right li {
   display: inline-block;
+  align-items: flex-end;
+  color: yellow;
+  }
+.right a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+.article li{
+  font-size: 0.75rem;
+  color: #424242;
 }
 p {
     font-size: 0.75rem;
     color: #424242;
   }
   h1 {
-    color: #424242;
+    color: white;
     font-size: 2rem;
+    font-family: Lucida, cursive;
+    background-color: #B009B0;
   }
   h2 {
-    color: #424242;
+    color: #08088A;
     font-size: 1.5rem;
-    margin-top:0em;
+    font-weight: bold;
+    margin-top:1rem;
     #view1,#view2,#view3,#view4,#view5 { margin-top:-4em; height:4em; }
-
   }
   h3 {
-    color: #585858;
+    color: #2E2EFE;
     font-size: 1rem;
+  }
+  h5 {
+    color: #424242;
   }
   img {
     margin: 0px 10px 0px 0px;
+    width:102px;
+    height:114px;
   }
   .clearfix {
   overflow: auto;
+}
+.wrapper {
+    width:100%;
+    position:fixed;
+    z-index:10;
+    background:white;
+}
+.bottom-wrapper {
+    width:100%;
+    padding-top:92px;
+    z-index:5;
+    overflow:auto;
+    background-color: white;
+    position: relative;
 }
   .flex-container {
     display: -webkit-flex;
@@ -79,41 +117,51 @@ p {
     font-size: 25px;
     font-weight: bold;
 }
+.glossary {
+  font-size: 0.75rem;
+  color: #424242;
+}
+.glossary dt {
+  font-size: 0.75rem;
+  color: #424242;
+  font-weight: bold;
+}
 #cssmenu {
   float: left;
   width: 100%;
-  background: #efefef;
+  background: #FF6E0D;
   font-size: 93%;
   line-height: normal;
-  border-bottom: 1px solid grey;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  border-top: 1px solid grey;
+  overflow: hidden;
+  position: relative;
 }
 #cssmenu ul {
-  margin: 1rem;
+  margin: 0;
   padding: 10px 10px 5px 50px;
   list-style: none;
+  position: relative;
+  clear:left;
 }
-#cssmenu li {
+#cssmenu ul li {
   display: inline;
   margin: 0;
   padding: 0;
   border-left: 1px;
 }
-#cssmenu a {
+#cssmenu ul li a {
   float: left;
   background: url("images/tableftf.gif") no-repeat left top;
   margin: 0;
-  padding: 0 0 0 4px;
+  padding:3px 10px;
   text-decoration: none;
+  line-height:1.3em;
 }
 #cssmenu a span {
   float: left;
   display: block;
   background: url("images/tabrightf.gif") no-repeat right top;
   padding: 0px 20px 4px 6px;
-  color: black;
+  color: white;
   font-weight: bolder;
   font-size: 120%;
 }
@@ -124,7 +172,7 @@ p {
 /* End IE5-Mac hack */
 #cssmenu .active a span,
 #cssmenu a:hover span {
-  color: blue;
+  color: #FFFF00;
 }
 #cssmenu .active a,
 #cssmenu a:hover {
